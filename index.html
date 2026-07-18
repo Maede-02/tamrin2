@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="Fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+</head>
+<body>
+
+    
+<div class="d-flex w-100">
+
+    <aside class="side w-25 offcanvas-lg offcanvas-end" id="sidebar" tabindex="-1">
+
+        <div class=" bg-dark text-withe p-3"   style="height: 100%;" >
+
+         <!--    <div class="offcanvas-header ">
+
+                <h5 class="offcanvas-title">
+                    <i class="bi bi-speedometer2 text-white"></i>
+                    پنل مدیریت
+                </h5>
+                <buttun class="btn btn-close btn-close-white">
+                    <i class="bi bi-person-badge"></i>
+                </buttun>
+            </div> -->
+            <div class="offcanvas-body d-flex flex-column">
+                <h5 class="text-white text-center pb-2">
+                    <i class="bi bi-speedometer2 text-white ms-2"></i>
+                    پنل مدیریت
+                </h5>
+                
+                <ul class="nav nav-pills flex-column gap-0 w-100 p-0">
+                
+                    <a href="#" class="text-decoration-none text-white nav-link" 
+                    onmouseover="this.classList.add('active')" onmouseout="this.classList.remove('active')" ><li class="nav-item">
+                        <i class="bi bi-house-door text-white ms-1"></i>
+                        داشبورد
+                    </li></a>
+
+                    <a href="#" class="text-decoration-none text-white nav-link"
+                    onmouseover="this.classList.add('active')" onmouseout="this.classList.remove('active')"><li class="nav-item">
+                        <i class="bi bi-people text-white ms-1"></i>
+                        کاربران
+                    </li></a>
+
+                    <a href="#" class="text-decoration-none text-white nav-link"
+                    onmouseover="this.classList.add('active')" onmouseout="this.classList.remove('active')"><li class="nav-item">
+                           <i class="bi bi-bag-check text-white ms-1"></i>
+                        سفارش ها
+                    </li></a>
+
+                    <a href="#" class="text-decoration-none text-white nav-link"
+                    onmouseover="this.classList.add('active')" onmouseout="this.classList.remove('active')"><li class="nav-item">
+                        <i class="bi bi-bar-chart-line text-white ms-1"></i>
+                        گزارش ها
+                    </li></a>
+
+                    <a href="#" class="text-decoration-none text-white nav-link"
+                    onmouseover="this.classList.add('active')" onmouseout="this.classList.remove('active')"><li class="nav-item">
+                        <i class="bi bi-gear text-white ms-1"></i>
+                        تنظیمات
+                    </li></a>
+
+                    <a href="#" class="text-decoration-none text-white nav-link"
+                    onmouseover="this.classList.add('active')" onmouseout="this.classList.remove('active')"><li class="nav-item">
+                        <i class="bi bi-box-arrow-right text-white ms-1"></i>
+                        خروج 
+                    </li></a>
+                        
+                </ul>
+                
+            </div>
+        </div>
+    </aside>
+
+    
+    <div class="w-100 d-flex flex-column align-items-center gap-5">
+    
+
+
+        <nav class="navbar d-flex justify-content-between w-100 position-sticky shadow-sm">
+            <div class="container-fluid">
+                
+                <button type="button" class="btn btn-outline-primary d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                
+                <a class="navbar-brand d-none d-lg-flex" href="#">داشبورد</a>
+        
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="جستجو" aria-label="Search" />
+                    <button class="btn btn-outline-primary" type="submit">جستجو</button>
+                </form>
+        
+                <button class="btn btn-primary" type="submit">
+                    <i class="bi bi-box-arrow-right"></i>
+                    ورود
+                </button>
+        
+            </div>
+        </nav>
+
+        <div class="w-75 d-flex flex-column gap-5">
+
+            <section class="bg-primary p-4 rounded-4">
+                <span class="badge bg-warning text-black" style="font-size: 10px;">نسخه جدید</span>
+                <h3 class="text-white mt-3 lh-1 fw-bold">طراحی مدرن با Bootstrap</h3>
+                <p class="text-white" style="font-size: smaller;">یک قالب ساده, واکنش گرا و آماده برای استفاده در پروژه های وب.</p>
+                <button class="btn btn-light" style="font-size: smaller;">
+                    شروع کنید
+                </button>
+
+            </section>
+
+            <section>
+
+                <div class="alert alert-success alert-dismissible fade show p-3" style="font-size: 12px;" role="alert">
+                     ثبت نام شما با موفقیت انجام شد.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="margin-right: calc(100% - 44px);"></button>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col-12 col-sm-4">
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title" style="font-size: smaller;">کاربران</h6>
+                                <p class="card-text text-success fw-bold fs-3 m-0">1,245</p>
+                                <span class="badge bg-success w-100" style="font-size: 8px;">12%+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title" style="font-size: smaller;">سفارش ها</h6>
+                                <p class="card-text text-danger fw-bold fs-3 m-0">326</p>
+                                <span class="badge bg-danger w-100" style="font-size: 8px;">3%-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title" style="font-size: smaller;">درآمد</h6>
+                                <p class="card-text text-primary fw-bold fs-3 m-0">85M</p>
+                                <span class="badge bg-primary w-100" style="font-size: 8px;">امروز</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+
+                <div class="mb-3 rounded-3 border p-2">
+                    <h5 class="py-3">فرم ثبت اطلاعات</h5>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="نام">
+                                <label for="floatingInput">نام</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option value="1">پشتیبانی</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelect">موضوع</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="EmailInput" class="form-label">ایمیل</label>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" id="EmailInput" placeholder="name@example.com" aria-label="name@example.com" aria-describedby="addon-wrapping">
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="form-label d-block">سطح اهمیت</label>
+                            <div class="btn-group w-100 " role="group" aria-label="Basic radio toggle button group">
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-success rounded-start-3 rounded-end-0" for="btnradio1">معمولی</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-warning" for="btnradio2">مهم</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-danger rounded-start-0 rounded-end-3" for="btnradio3">فوری</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+
+                            <label for="exampleFormControlTextarea1" class="form-label">پیام</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-check pt-2">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    قوانین را قبول دارم
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary px-5" type="submit">ارسال فرم</button>
+                            <button class="btn btn-outline-primary" type="button">پاک کردن</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                    
+                        <div class=" border rounded-3 p-3">
+                            <h5>سوالات متداول</h5>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            آیا این قالب واکنش گراست؟
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            بله با Grid سیستم bootstrap ساخته شده است.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            آیا فرم قابل توسعه است؟
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با 
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        </div>
+
+                    
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="border rounded-3 p-4 ">
+
+
+                            <h5>لیست کاربران</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">نام</th>
+                                        <th scope="col">نقش</th>
+                                        <th scope="col">وضعیت</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>علی رضایی</td>
+                                        <td>ادمین</td>
+                                        <td><span class="badge bg-success">فعال</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>سارا محمدی</td>
+                                        <td>کاربر</td>
+                                        <td><span class="badge bg-warning text-black">در انتظار</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <empty class="w-100" style="height: 100px;"></empty>
+        
+    </div>
+
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
